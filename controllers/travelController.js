@@ -2,10 +2,15 @@ const travel = require('../models/travel');
 
 //create
 const createTravel = async (req, res) => {
+    
     try {
+        res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3001');
         let myTravel = new travel(req.body);
+        debugger
         console.log("my travel" + myTravel);
-        await myTravel.save();
+        debugger
+        let a = await myTravel.save();
+        console.log("aaaaaaaaaaaa" + a);
         res.status(200).json({ myTravel: myTravel });
     }
     catch {

@@ -4,6 +4,9 @@ const bodyParser = require('body-parser');
 const mogoose = require('mongoose')
 const env = require('dotenv');
 const router = require('./routs/travelApi');
+var cors = require('cors')
+
+app.use(cors())
 
 
 env.config();
@@ -27,6 +30,6 @@ mogoose.connect(process.env.DB_CONNECT, connectionParams)
 
 
 
-app.listen(4000, (req, res) => {
-    console.log("listen...... 4000");
+app.listen(3000, (req, res) => {
+    console.log("listen...... 3000");
 })

@@ -8,25 +8,25 @@ const travelSchema = mongoose.Schema({
     },
     hour:{
         type: String,
-        require: true
+        //require: true
     },
 
     destination:{
         type: String,
-        require: true
+        //require: true
     },
     departure:{
         type: String,
-        require: true  
+        //require: true  
     },
     payment:{
         type: Boolean,
-        require: true 
+        //require: true 
     },
     //male / female
     gender:{
         type: String,
-        require: true
+        //require: true
     },
     numPassengers:{
         type: Number,
@@ -39,20 +39,20 @@ const travelSchema = mongoose.Schema({
     },
     phone:{
         type: String,
-        require: true
+        //require: true
     },
     emailAlerts:{
         type: Boolean,
-        require: true  
+        //require: true  
     },
     phoneAlerts:{
         type: Boolean,
-        require: true  
+        //require: true  
     },
     //driver/passenger
     userType:{
         type: String,
-        require: true
+        //require: true
     }
     
 })
